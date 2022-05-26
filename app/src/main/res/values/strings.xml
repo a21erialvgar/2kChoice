@@ -28,4 +28,5 @@
     <string name="aqui">Aquí</string>
     <string name="vota">VOTA</string>
     <string name="resultados">RESULTADOS DE LA VOTACIÓN</string>
+    <string name="verresults">Ver resultados</string>
 </resources>

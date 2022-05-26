@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -295,11 +296,11 @@ public class ThirdActivity extends AppCompatActivity {
                                 if (nomJugador.startsWith("LUKA")) {
                                     int votacioDoncic = ++votDoncic;
                                     HashMap<String, Object> vot = new HashMap<>();
-                                    vot.put("votdoncic", votacioDoncic);
-                                    vot.put("votbooker", votbooker);
-                                    vot.put("votanteto", votAnteto);
-                                    vot.put("vottatum", vottatum);
-                                    vot.put("votjokic", votjokic);
+                                    vot.put("votdoncic", 1);
+                                    vot.put("votbooker", 0);
+                                    vot.put("votanteto", 0);
+                                    vot.put("vottatum", 0);
+                                    vot.put("votjokic", 0);
 
                                     votacio.collection("VotsJugadors")
                                             .add(vot)
@@ -318,11 +319,11 @@ public class ThirdActivity extends AppCompatActivity {
                                 } else if (nomJugador.startsWith("DEVIN")) {
                                     int votacioDevin = ++votbooker;
                                     HashMap<String, Object> vot = new HashMap<>();
-                                    vot.put("votdoncic", votDoncic);
-                                    vot.put("votbooker", votacioDevin);
-                                    vot.put("votanteto", votAnteto);
-                                    vot.put("vottatum", vottatum);
-                                    vot.put("votjokic", votjokic);
+                                    vot.put("votdoncic", 0);
+                                    vot.put("votbooker", 1);
+                                    vot.put("votanteto", 0);
+                                    vot.put("vottatum", 0);
+                                    vot.put("votjokic", 0);
 
                                     votacio.collection("VotsJugadors")
                                             .add(vot)
@@ -339,13 +340,12 @@ public class ThirdActivity extends AppCompatActivity {
                                                 }
                                             });
                                 } else if (nomJugador.startsWith("JAYSON")) {
-                                    int votacioJayson = ++vottatum;
                                     HashMap<String, Object> vot = new HashMap<>();
-                                    vot.put("votdoncic", votDoncic);
-                                    vot.put("votbooker", votbooker);
-                                    vot.put("votanteto", votAnteto);
-                                    vot.put("vottatum", votacioJayson);
-                                    vot.put("votjokic", votjokic);
+                                    vot.put("votdoncic", 0);
+                                    vot.put("votbooker", 0);
+                                    vot.put("votanteto", 0);
+                                    vot.put("vottatum", 1);
+                                    vot.put("votjokic", 0);
 
                                     votacio.collection("VotsJugadors")
                                             .add(vot)
@@ -364,11 +364,11 @@ public class ThirdActivity extends AppCompatActivity {
                                 } else if (nomJugador.startsWith("GIANNIS")) {
                                     int votacioAnteto = ++votAnteto;
                                     HashMap<String, Object> vot = new HashMap<>();
-                                    vot.put("votdoncic", votDoncic);
-                                    vot.put("votbooker", votbooker);
-                                    vot.put("votanteto", votacioAnteto);
-                                    vot.put("vottatum", vottatum);
-                                    vot.put("votjokic", votjokic);
+                                    vot.put("votdoncic", 0);
+                                    vot.put("votbooker", 0);
+                                    vot.put("votanteto", 1);
+                                    vot.put("vottatum", 0);
+                                    vot.put("votjokic", 0);
 
                                     votacio.collection("VotsJugadors")
                                             .add(vot)
@@ -387,11 +387,11 @@ public class ThirdActivity extends AppCompatActivity {
                                 } else if (nomJugador.startsWith("NIKOLA")) {
                                     int votacioJokic = ++votjokic;
                                     HashMap<String, Object> vot = new HashMap<>();
-                                    vot.put("votdoncic", votDoncic);
-                                    vot.put("votbooker", votbooker);
-                                    vot.put("votanteto", votAnteto);
-                                    vot.put("vottatum", vottatum);
-                                    vot.put("votjokic", votacioJokic);
+                                    vot.put("votdoncic", 0);
+                                    vot.put("votbooker", 0);
+                                    vot.put("votanteto", 0);
+                                    vot.put("vottatum", 0);
+                                    vot.put("votjokic", 1);
 
                                     votacio.collection("VotsJugadors")
                                             .add(vot)
@@ -415,7 +415,11 @@ public class ThirdActivity extends AppCompatActivity {
                         }
                     }
                 });
+        Toast.makeText(getApplicationContext(), "Se ha votado con éxito",
+                Toast.LENGTH_SHORT).show();
+    }
 
+    public void toLastActivity(View view){
         Intent intent = new Intent(ThirdActivity.this, LastActivity
                 .class);
         startActivity(intent);

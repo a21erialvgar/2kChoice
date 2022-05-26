@@ -52,17 +52,20 @@ public class LastActivity extends AppCompatActivity {
                                  votjokic = votjokic + task.getResult().getDocuments().get(i).getLong("votjokic").intValue();
                                  vottatum =  vottatum + task.getResult().getDocuments().get(i).getLong("vottatum").intValue();
 
+
+                            }
                                 votoAnteto.setText(votAnteto + " votos");
                                 votoDoncic.setText(votDoncic + " votos");
                                 votojokic.setText(votjokic + " votos");
                                 votobooker.setText(votbooker + " votos");
                                 vototatum.setText(vottatum + " votos");
                             }
-                            }
                         } else {
                             Log.w(TAG, "Error getting documents.", task.getException());
                         }
                     }
                 });
+
+
     }
 }
