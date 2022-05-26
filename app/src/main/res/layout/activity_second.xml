@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SecondActivity">
+
+
+    <EditText
+        android:id="@+id/useredittext"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="400dp"
+        android:autofillHints=""
+        android:fontFamily="@font/roboto"
+        android:hint="@string/user"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passedittext"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="500dp"
+        android:autofillHints=""
+        android:fontFamily="@font/roboto"
+        android:hint="@string/pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnentra"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/roboto"
+        android:onClick="toThirdActivity"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textStyle="normal|bold|italic"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="106dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/_2kchoicelogo"
+        app:srcCompat="@drawable/choice" />
+
+    <TextView
+        android:id="@+id/titol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/titol"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/registra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="700dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/registra" />
+
+    <Button
+        android:id="@+id/clickar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="686dp"
+        android:background="@color/black"
+        android:fontFamily="@font/roboto"
+        android:minWidth="48dp"
+        android:onClick="registra"
+        android:text="@string/aqui"
+        android:textColor="@color/white" />
+</RelativeLayout>

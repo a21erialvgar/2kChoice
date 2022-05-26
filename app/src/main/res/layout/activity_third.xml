@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/textviewjayson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/jaysontatum"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewdevinbooker" />
+
+    <TextView
+        android:id="@+id/textViewposicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/posicioES"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textviewdevinbooker"
+        app:layout_constraintTop_toBottomOf="@+id/textViewposicio" />
+
+    <TextView
+        android:id="@+id/textViewposicioluka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/posicioAL"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textviewjayson"
+        app:layout_constraintTop_toBottomOf="@+id/textViewposicio2" />
+
+    <TextView
+        android:id="@+id/textViewposicio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/posicioP"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textviewNom3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewposicio5" />
+
+    <TextView
+        android:id="@+id/textViewposicio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/posicioAP"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textviewNom5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewposicioluka" />
+
+    <TextView
+        android:id="@+id/textviewdevinbooker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/devinbooker"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewLuka" />
+
+    <TextView
+        android:id="@+id/textviewNom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/nikolaJokic"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewNom5" />
+
+    <TextView
+        android:id="@+id/textviewNom5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/giannisanteto"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewjayson" />
+
+    <TextView
+        android:id="@+id/textviewLuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/lukadoncic"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewposicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/posicioB"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textviewLuka"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/lukadoncicedad"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewposicio"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewedad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/devinbookeredad"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewposicio2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewedad" />
+
+    <TextView
+        android:id="@+id/textViewedadluka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/jaysontatumedad"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewposicioluka"
+        app:layout_constraintTop_toBottomOf="@+id/textViewedad2" />
+
+    <TextView
+        android:id="@+id/textViewedad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/nikolaJokicedad"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewposicio3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewedad5" />
+
+    <TextView
+        android:id="@+id/textViewedad5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/giannisantetoedad"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textViewposicio5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewedadluka" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="132dp"
+        android:background="@color/black"
+        android:text="@string/ficha"
+        android:textColor="#EC1C23"
+        android:fontFamily="@font/roboto"
+        android:onClick="mostraLuka"
+        app:layout_constraintStart_toEndOf="@+id/textViewedad"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/black"
+        android:text="@string/ficha"
+        android:onClick="mostraDevin"
+        android:textColor="#EC1C23"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewedad2"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/black"
+        android:text="@string/ficha"
+        android:onClick="mostraTatum"
+        android:textColor="#EC1C23"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewedadluka"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/black"
+        android:text="@string/ficha"
+        android:onClick="mostraJokic"
+        android:textColor="#EC1C23"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/textViewedad3"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/black"
+        android:text="@string/ficha"
+        android:onClick="mostraGiannis"
+        android:fontFamily="@font/roboto"
+        android:textColor="#EC1C23"
+        app:layout_constraintStart_toEndOf="@+id/textViewedad5"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/elige"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

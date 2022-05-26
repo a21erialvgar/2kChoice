@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">2KCHOICE</string>
+    <string name="titol">2KCHOICE</string>
+    <string name="entra">Entra</string>
+    <string name="logo2k">Logo2k</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="_2kchoicelogo">2kChoiceLogo</string>
+    <string name="posicioB">Base</string>
+    <string name="posicioES">Escolta</string>
+    <string name="posicioAL">Alero</string>
+    <string name="posicioAP">Ala-Pivot</string>
+    <string name="posicioP">Pivot</string>
+    <string name="jaysontatum">Jayson Tatum</string>
+    <string name="nikolaJokic">Nikola Jokić</string>
+    <string name="devinbooker">Devin Booker</string>
+    <string name="lukadoncic">Luka Dončić</string>
+    <string name="giannisanteto">Giannis Anteto</string>
+    <string name="jaysontatumedad">24 años</string>
+    <string name="nikolaJokicedad">27 años</string>
+    <string name="devinbookeredad">25 años</string>
+    <string name="lukadoncicedad">23 años</string>
+    <string name="giannisantetoedad">27 años</string>
+    <string name="ficha">Ver Ficha</string>
+    <string name="elige">¡Elige a tu MVP!</string>
+    <string name="registra">Si quieres registrarte, clicka</string>
+    <string name="aqui">Aquí</string>
+    <string name="vota">VOTA</string>
+    <string name="resultados">RESULTADOS DE LA VOTACIÓN</string>
+</resources>
